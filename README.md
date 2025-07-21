@@ -1,3 +1,1 @@
-# Cho-Gall-Dr-Mundo
-
-테스트
+delete .github readme
