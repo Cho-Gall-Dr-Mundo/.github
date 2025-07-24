@@ -1,7 +1,10 @@
 <!-- 상단 웨이브 배너 -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=TrendChat&fontSize=40&fontColor=ffffff&fontAlignY=35&desc=&descAlignY=60&descAlign=63" />
+  <img 
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=180&section=header&text=TrendChat&fontSize=40&fontColor=ffffff&fontAlignY=35&desc=&descAlignY=60&descAlign=63"
+    width="100%" />
 </p>
+
 
 
 <h2 align="center">👥 Team Members</h2>
@@ -34,6 +37,11 @@
 
 **트렌드챗**은 실시간으로 인기 주제를 중심으로 사람들이 모여 대화할 수 있는  **토픽 기반 단체 채팅 플랫폼**입니다.  Kafka, Redis, WebFlux, RabbitMQ 등 최신 기술을 활용해 고성능 실시간 처리를 구현했으며,  모든 서비스는 마이크로서비스 구조로 나누어 Docker로 컨테이너화되어 운영됩니다.
 
+<a href="https://big-special-antelope.ngrok-free.app/" target="_blank">
+  <strong>🚀 트렌드챗 경험하기</strong>
+</a>
+
+
 <h2 align="center">🧱 Tech Stack</h2>
 
 <p align="center">
@@ -64,6 +72,31 @@
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 </p>
 
+## 🖥️  서비스 이미지
+
+***메인 페이지***
+<img width="1871" height="895" alt="Screenshot 2025-07-23 at 1 36 50 pm" src="https://github.com/user-attachments/assets/f46e45c8-715c-4bfd-85b8-4db9da3dec97" />
+
+***트렌트 키워드 랭킹***
+<img width="1890" height="898" alt="Screenshot 2025-07-23 at 1 36 58 pm" src="https://github.com/user-attachments/assets/603671ae-8433-4994-8f2f-74ab4a9e99dd" />
+
+***트렌트 키워드 채팅방 입장페이지***
+<img width="1903" height="915" alt="Screenshot 2025-07-23 at 1 37 06 pm" src="https://github.com/user-attachments/assets/7819a5bb-3956-40d1-99da-13871058ed20" />
+
+***채팅방***
+<img width="1868" height="924" alt="Screenshot 2025-07-23 at 1 37 23 pm" src="https://github.com/user-attachments/assets/707aea9a-02e4-45ed-8efe-83dcaf5651c3" />
+
+***실시간 인기 채팅방***
+<img width="1896" height="922" alt="Screenshot 2025-07-23 at 1 39 12 pm" src="https://github.com/user-attachments/assets/9ee6ec51-6cdd-4d15-b0a5-9444dc1509a2" />
+
+***인기 트렌드 뉴스목록***
+<img width="1905" height="869" alt="Screenshot 2025-07-24 at 4 06 20 pm" src="https://github.com/user-attachments/assets/d9045345-ce10-4fdb-9c09-bb46722b97cf" />
+
+***인기 트렌드 뉴스***
+<img width="1912" height="875" alt="Screenshot 2025-07-24 at 4 06 32 pm" src="https://github.com/user-attachments/assets/5447c689-81ec-4cc7-a68a-31b903813b6d" />
+
+
+
 ## ✅ 서비스 플로우
 
 1️⃣ **채팅방 자동 생성**  
@@ -89,9 +122,29 @@
    새로운 메시지가 도착하면 해당 채팅방에  **NEW** 표시가 나타나고,  
    트렌드 변화가 감지되면 관련 알림이 상단 🔔 알림 바에 표시됩니다.
 
+---
+***체팅방 입장 로직*** 
+<img width="1718" height="705" alt="TrendChat-페이지-2 drawio" src="https://github.com/user-attachments/assets/b9e066fb-026b-4c67-bbe1-72ef23fc1f55" />
+
+
+***메시지 전송 로직*** 
+<img width="1519" height="611" alt="TrendChat-페이지-1 drawio" src="https://github.com/user-attachments/assets/3bf81751-805a-4933-8d32-a94607e7246e" />
+
+***트렌드 키워드 데이터 수집 로직***
+<img width="1221" height="421" alt="제목 없는 다이어그램-페이지-2 drawio" src="https://github.com/user-attachments/assets/d2e22de5-a5d9-4d3c-b71e-68a1097a2681" />
+
+***트렌드 데이터 분석 로직***
+<img width="1197" height="351" alt="제목 없는 다이어그램-페이지-3 drawio" src="https://github.com/user-attachments/assets/febef968-8e67-452d-9bbe-d247cf225b4c" />
+
+***트렌드 데이터 생성 로직***
+<img width="1273" height="513" alt="제목 없는 다이어그램-페이지-4 drawio" src="https://github.com/user-attachments/assets/041abbdf-d683-43e9-90a7-36c0b97f7464" />
+
 
 
 <!-- Footer 웨이브 -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer" />
+  <img 
+    src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=120&section=footer"
+    width="100%" />
 </p>
+
