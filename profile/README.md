@@ -50,7 +50,6 @@
   <img src="https://img.shields.io/badge/SpringBoot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" />
   <img src="https://img.shields.io/badge/Kafka-231F20?style=for-the-badge&logo=apachekafka&logoColor=white" />
   <img src="https://img.shields.io/badge/Kafka_Connect-000000?style=for-the-badge&logo=apachekafka&logoColor=white" />
-  <img src="https://img.shields.io/badge/Kafka_UI-9146FF?style=for-the-badge&logo=graphql&logoColor=white" />
   <img src="https://img.shields.io/badge/RabbitMQ-FF6600?style=for-the-badge&logo=rabbitmq&logoColor=white" />
   <img src="https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white" />
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
@@ -100,10 +99,43 @@
 
 ## ✅ 서비스 플로우
 
+
+<table>
+<tr>
+  <td width="50%" valign="top">
+
+<h3 align="center">Trend-Service</h3>
+  
+1️⃣ **트렌드 키워드 수집**</br>
+  실시간으로 구글 트렌드를 기반으로 트렌드키워드를 수집합니다.
+    
+2️⃣ **트렌드 데이터 정제**</br>
+  키워드 중복 여부를 판단하고, 존재할 경우 트래픽과 요약 정보를 갱신하며,
+  존재하지 않을 경우 새로운 키워드를 생성합니다. 또한 새로운 키워드 데이터를
+  AI 에이전트에게 Kafka를 통해 전달합니다.
+    
+3️⃣ **AI 에이전트의 트렌드 데이터 생성**</br>
+  LangGraph 기반의 AI 에이전트는 Kafka를 통해 전달된 키워드를
+  분석하여 요약 및 카테고리 분류 및 뉴스 형태의 콘텐츠를 생성하고,
+  이를 trend-service에 전달하는 역할을 담당합니다.
+    
+4️⃣ **트렌드 변화 분석**</br>
+  수집된 키워드의 트래픽 데이터를 이전 데이터와 비교하여 변화량을 계산하고,
+  일정 기준 이상의 변화율을 보이는 키워드만 선별하여 "핫 키워드"로 판단합니다.
+    
+5️⃣ **핫 키워드 저장 및 알림 전송**</br>
+  감지된 핫 키워드는 데이터베이스에 저장되며, 실시간 검색어 순위 형태로
+  사용자에게 제공되며 동시에 실시간 알림(SSE)을 통해 사용자에게 전송됩니다.
+    
+  </td>
+
+  <td width="50%" valign="top">
+    
+  <h3 align="center">Chat-Service</h3>
+
 1️⃣ **채팅방 자동 생성**  
-   실시간으로 수집한 **구글 인기 검색어**를 기반으로  
-   새로운 채팅방이 자동 생성되며,  
-   제목과 설명은 AI Agent가 주제에 맞게 작성합니다.
+   트렌드 서비스에서 가공한 트렌드 데이터를 기반으로
+   새로운 채팅방이 자동 생성됩니다.
 
 2️⃣ **채팅방 입장 및 참여**  
    사용자는 관심 있는 주제의 채팅방에 자유롭게 입장해  
@@ -115,13 +147,18 @@
    메시지를 안정적으로 브로드캐스트하며,  
    모든 참여자에게 실시간으로 전달됩니다.
 
-4️⃣ **트렌드 분석 및 인기 채팅방 노출**  
-   채팅방별 참여자 수 및 메시지량을 분석해  
+4️⃣ **인기 채팅방 노출**  
+   채팅방별 참여자 수 및 메시지량을 분석해
    실시간 인기 채팅방을 집계하고 메인 화면에 노출합니다.
 
 5️⃣ **알림 및 트렌드 변화 표시**  
    새로운 메시지가 도착하면 해당 채팅방에  **NEW** 표시가 나타나고,  
    트렌드 변화가 감지되면 관련 알림이 상단 🔔 알림 바에 표시됩니다.
+
+  </td>
+</tr>
+</table>
+
 
 ---
 ***체팅방 입장 로직*** 
