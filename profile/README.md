@@ -72,6 +72,10 @@
   <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
 </p>
 
+## 🏗️서비스 아키텍쳐
+<img width="2331" height="1301" alt="제목 없는 다이어그램-페이지-7 drawio" src="https://github.com/user-attachments/assets/4fc7638e-de38-4f34-9cc9-1e5fd5b48d67" />
+
+
 ## 🖥️  서비스 이미지
 
 ***메인 페이지***
@@ -175,7 +179,7 @@
 <img width="1197" height="351" alt="제목 없는 다이어그램-페이지-3 drawio" src="https://github.com/user-attachments/assets/febef968-8e67-452d-9bbe-d247cf225b4c" />
 
 ***트렌드 데이터 생성 로직***
-<img width="1273" height="513" alt="제목 없는 다이어그램-페이지-4 drawio" src="https://github.com/user-attachments/assets/041abbdf-d683-43e9-90a7-36c0b97f7464" />
+<img width="1458" height="513" alt="제목 없는 다이어그램-페이지-4 drawio (1)" src="https://github.com/user-attachments/assets/3e959c7a-14ba-498b-9af1-5157ee3f435b" />
 
 
 
