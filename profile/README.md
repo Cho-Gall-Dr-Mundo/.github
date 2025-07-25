@@ -181,6 +181,18 @@
 ***트렌드 데이터 생성 로직***
 <img width="1458" height="513" alt="제목 없는 다이어그램-페이지-4 drawio (1)" src="https://github.com/user-attachments/assets/3e959c7a-14ba-498b-9af1-5157ee3f435b" />
 
+## 📊ERD
+
+***Chat-Service***
+<img width="1852" height="840" alt="chat_message" src="https://github.com/user-attachments/assets/538ec342-5269-4fd6-9ea0-c0e7fdb6154b" />
+
+***Trend-Service***
+<img width="1894" height="846" alt="major_category" src="https://github.com/user-attachments/assets/952a2cca-ef5f-4f21-acca-85994ef141dc" />
+
+***User-Service***
+
+<img width="370" height="345" alt="image (4)" src="https://github.com/user-attachments/assets/3929077f-7d6b-4d50-a201-37e179eb5962" />
+
 
 
 <!-- Footer 웨이브 -->
